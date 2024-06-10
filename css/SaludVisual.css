@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    }
+    body{
+    background: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important; 
+    }
+    #footer-final {
+        margin-top: 131rem
+    }
+    .abt-interfaz{
+        width: 100%;
+        height: 40vh;
+        background-image: url('../img/SV-Fondo.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+    }
+
+    /* Apartado de Salud Visual informacion*/
+    .SV-info-h{
+        margin-top: 90px;
+    }
+    .SV-info-h h1{
+        font-size: 50px;
+        transition: transform 0.3s ease;
+    }
+    .SV-info-h h1:hover {
+        transform: rotate(10deg); /* Al hacer hover sobre el título, rotará 10 grados a la derecha */
+    }
+    
+    .SV-info-h h1:hover:hover:hover {
+        transform: rotate(5deg); /* Al hacer hover sobre el título, rotará 10 grados a la izquierda */
+    }
+    .SV-info-h p{
+        font-size: 23px;
+        margin-top: 20px;
+    }
+    .SV-info-img{
+        text-align: center;
+    }
+    .SV-info-img img{
+        width: 65%;
+        height: auto;
+        margin-top: 30px;
+        transition: transform 0.3s ease;
+    }
+    .SV-info-img img:hover {
+        transform: scale(1.1) rotate(10deg); /* Al hacer hover sobre la imagen, la escala aumentará al 110% y se rotará 10 grados a la derecha */
+    }
+    
+    .SV-info-img img:hover:hover:hover {
+        transform: scale(1.1) rotate(-10deg); /* Al hacer hover sobre la imagen, la escala aumentará al 110% y se rotará 10 grados a la izquierda */
+    }
+
+    /* Apartado de Nuestro Servicio */
+    .ntsv-container{
+        position: absolute;
+        width: 100%;
+        height: 80vh;
+        margin-top: 800px;
+    
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    .titulo-ntsv{
+        width: 100%;
+        margin-left: 19rem;
+    }
+    .titulo-ntsv h1{
+        font-size: 50px;
+        transition: transform 0.3s ease;
+    }
+    .titulo-ntsv h1:hover {
+        transform: rotate(10deg); /* Al hacer hover sobre el título, rotará 10 grados a la derecha */
+    }
+    
+    .titulo-ntsv h1:hover:hover:hover {
+        transform: rotate(1deg); /* Al hacer hover sobre el título, rotará 10 grados a la izquierda */
+    }
+    .card {
+        position: relative;
+        width: 400px;
+        height: 450px;
+        margin: 20px;
+        background: #D6EBFE;
+    }
+    
+    .card .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s;
+    }
+    
+    .card .front {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000;
+    }
+    
+    .card .front img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .card .front h3 {
+        position: absolute;
+        bottom: -8px;
+        width: 100%;
+        height: 50px;
+        line-height: 45px;
+        color: #fff;
+        background:rgb(81, 155, 198);
+        text-align: center;
+    }
+    
+    .card .back {
+        transform: perspective(600px) rotateY(180deg);
+        background: rgb(81, 155, 198);
+        padding: 15px;
+        color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 5px 10px #000;
+    }
+    
+    .card .back h2 {
+        font-size: 30px;
+        margin-top: 20px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    
+    .card .back p {
+        letter-spacing: 1px;
+        font-size: 25px;
+    } 
+    
+    .card:hover .front {
+        transform: perspective(600px) rotateY(180deg);
+    }
+    
+    .card:hover .back {
+        transform: perspective(600px) rotateY(360deg);
+    }
+    /* Parte del footer */
+    .gono{
+        margin-top: 107.5em;
+    }
+    /* tabled*/
+    @media screen and (min-width:768px) and (max-width:990px){
+        .abt-interfaz {
+            height: 30vh;
+        }
+        .SV-info-h {
+            margin-top: 35px;
+        }
+        .titulo-ntsv{
+            margin-left: 0rem;
+        }
+        .titulo-ntsv h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+        /* Nuestro servicio */
+        .ntsv-container{
+            margin-top: 49rem !important;
+            height: 127rem !important;
+        }
+        .card {
+            width: 320px;
+            height: 370px;
+            margin: 10px;
+        }
+        .card .back p {
+            font-size: 20px;
+        } 
+        /* Footer final */
+        .gono{
+            margin-top: 147em;
+        }
+        /* Ajustes de -Footer */
+        #footer-final {
+            margin-top: 165rem !important;
+            flex-wrap: wrap !important;
+        }
+    
+    }
+    /* MObil */
+    @media screen and (min-width:320px) and (max-width:600px){
+        body, html {
+            overflow-x: hidden !important;
+        }
+        .ntsv-container{
+            margin-top: 49rem !important;
+            height: 244rem !important;
+            margin-top: 40rem !important;
+        }
+        .SV-info-img img {
+            width: 79%;
+            height: auto;
+            margin-top: 13px;
+        }
+        .SV-info-h{
+            margin-top: 20px;
+            text-align: center !important;
+        }
+        .SV-info-h p{
+            font-size: 20px;
+        }
+        .card {
+            width: 320px;
+            height: 370px;
+            margin: 10px;
+        }
+        .card .back p {
+            font-size: 17px;
+        } 
+        /* Footer final */
+        .gono{
+            margin-top: 184em;
+        }
+        .titulo-ntsv{
+            margin-left: 0rem;
+        }
+        .titulo-ntsv h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+        #footer-final {
+            margin-top: 276rem !important;
+            flex-wrap: wrap !important;
+        }
+    }
+    
+@media screen and (min-width:1020px) and (max-width:1366px){
+    .SV-info-img img {
+        width: 74%;
+        margin-top: 98px;
+    }
+    .ntsv-container {
+        margin-top: 35rem !important;
+        height: 184vh !important;
+    }
+    .gono {
+        margin-top: 190rem !important;
+    }
+} 

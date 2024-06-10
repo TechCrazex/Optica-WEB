@@ -1,0 +1,335 @@
+*{
+padding: 0;
+margin: 0;
+}
+body{
+background: rgb(255, 255, 255);
+margin: 0; 
+padding: 0; 
+overflow-x: hidden !important; 
+}
+.abt-interfaz{
+    width: 100%;
+    height: 40vh;
+    background-image: url('../img/abt-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.interfaz-tex{
+    width: 25%;
+    height: auto;
+    margin-left: 200px;
+    position: relative;
+    top: 120px;
+}
+.interfaz-tex p{
+    font-size: 20px;
+}
+/* Apartado de quienes somos */
+.QS-container{
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    margin-top: 380px;
+}
+.QS-container h1{
+    margin-left: 350px;
+    font-size: 50px;
+    transition: transform 0.3s ease;
+}
+.QS-container h1:hover {
+    transform: rotate(10deg); /* Al hacer hover sobre el título, rotará 10 grados a la derecha */
+}
+
+.QS-container h1:hover:hover:hover {
+    transform: rotate(1deg); /* Al hacer hover sobre el título, rotará 10 grados a la izquierda */
+}
+.QS-info{
+    margin: 0 auto;
+    position: relative;
+    right: 100px;
+}
+.QS-info p{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.QS-img{
+    position: relative;
+    left: 100px;
+    bottom: 90px;
+    
+}
+.QS-img img{
+    width: 70%;
+    transition: transform 0.5s ease;
+}
+.QS-img img:hover {
+    transform: scale(1.1) rotate(10deg); /* Al hacer hover sobre la imagen, la escala aumentará al 110% y se rotará 10 grados a la derecha */
+}
+
+.QS-img img:hover:hover:hover {
+    transform: scale(1.1) rotate(-10deg); /* Al hacer hover sobre la imagen, la escala aumentará al 110% y se rotará 10 grados a la izquierda */
+}
+/* Apartado de Nuestro Servicio */
+.ntsv-container{
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    margin-top: 800px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.titulo-ntsv{
+    width: 100%;
+    text-align: center;
+}
+.titulo-ntsv h1{
+    font-size: 50px;
+    transition: transform 0.3s ease;
+}
+.titulo-ntsv h1:hover {
+    transform: rotate(10deg); /* Al hacer hover sobre el título, rotará 10 grados a la derecha */
+}
+
+.titulo-ntsv h1:hover:hover:hover {
+    transform: rotate(4deg); /* Al hacer hover sobre el título, rotará 10 grados a la izquierda */
+}
+.card {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    margin: 20px;
+    background: #D6EBFE;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+    height: 50px;
+    line-height: 45px;
+    color: #fff;
+    background: rgb(81, 155, 198);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(81, 155, 198);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+    font-size: 25px;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+/* Parte del footer */
+.gono{
+    margin-top: 107.5em;
+}
+/* Aca va el logo flotante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    text-align: center;
+    z-index: 100;
+}
+  
+.whatsapp-float img {
+    width: 60px;
+    margin-top: 5px;
+}
+  
+/* tabled*/
+@media screen and (min-width:768px) and (max-width:990px){
+    .whatsapp-float img {
+        width: 0px;
+    }
+    .abt-interfaz {
+        height: 30vh;
+    }
+    .interfaz-tex{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }  
+    .QS-info{
+        right: 0px;
+    }
+    .QS-info p{
+        margin-top: 30px;
+    }
+    .QS-img{
+        left: 0px;
+        text-align: center;
+    }
+    .QS-img img{
+        width: 80%;
+        margin-top: 85px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Nuestro servicio */
+    .ntsv-container{
+        margin-top: 1222px;
+        height: 1000px;
+    }
+    .card {
+        width: 340px;
+        height: 390px;
+        margin: 12px;
+    }
+    .card .back p {
+        font-size: 20px;
+    } 
+    /* Footer final */
+    .gono{
+        margin-top: 147em;
+    }
+
+}
+/* MObil */
+@media screen and (min-width:320px) and (max-width:600px){
+    .whatsapp-float img {
+        width: 0px;
+    }
+    .interfaz-tex{
+        width: 80%;
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 15px;
+        top: 60px;
+    }
+    .interfaz-tex p{
+        margin: 0 auto;
+    }
+    .QS-info{
+        right: 0px;
+    }
+    .QS-info p{
+        margin-top: 20px;
+    }
+    .QS-img{
+        left: 0px;
+    }
+    .QS-container h1{
+        margin: 0 auto;
+        text-align: center !important;
+    }
+    .QS-img img {
+     margin-top: 95px;
+     width: 100%;
+    }
+
+    /* Nuestro servicio */
+    .ntsv-container{
+        margin-top: 1222px;
+        height: 1750px;
+    }
+    .card {
+        width: 340px;
+        height: 390px;
+        margin: 12px;
+    }
+    .card .back p {
+        font-size: 20px;
+    } 
+    /* Footer final */
+    .gono{
+        margin-top: 184em;
+    }
+    .titulo-ntsv h1{
+        font-size: 40px;
+    }
+    .QS-container h1{
+        font-size: 40px;
+    }
+}
+
+/* Tablet Pro*/
+@media screen and (min-width:1020px) and (max-width:1366px){
+    .whatsapp-float img {
+        width: 70px;
+    }
+    .whatsapp-float {
+        position: fixed;
+        bottom: 40px;
+        right: 10px;
+        text-align: center;
+        z-index: 100;
+    }
+    .interfaz-tex {
+        width: 50% !important;
+    }
+    .abt-interfaz {
+        height: 25vh;
+    }
+    .QS-info {
+        right: 0px;
+    }
+    .QS-img {
+        position: relative;
+        left: 22px;
+        bottom: 0px
+    }   
+    .QS-img img{
+        width: 85% !important;
+    }
+    .ntsv-container {
+        min-height: 0vh !important;
+    }
+    #footer-final {
+        margin-top: -47px !important;
+    }
+
+}

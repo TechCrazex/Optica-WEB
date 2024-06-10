@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles</title>
+    <link rel="icon" href="../img/LogoWeb.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/details.css">
+    <!-- Link de styles solo para el foter -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <!-- Barra navegacion y Info empresa intro -->
+    <section id="fase-home1">
+    <!-- Barra de  navegacion  -->
+    <div class=" "> 
+      <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-cont">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html"><img src="../img/logo-nav.png" alt=""></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item ">
+                            <a class="nav-link nav-btn-home" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item ">
+                            <a class="nav-link nav-btn-home" aria-current="page" href="Productos.html">Productos</a>
+                          </li>
+                          <li class="nav-item ">
+                            <a class="nav-link nav-btn-home" aria-current="page" href="about.html">¿Quienes Somos?</a>
+                          </li>
+                          <li class="nav-item ">
+                            <a class="nav-link nav-btn-home" aria-current="page" href="saludVisual.html">Salud Visual</a>
+                          </li>
+                          <li class="nav-item ">
+                            <a class="nav-link nav-btn-home" aria-current="page" href="details.html">Detalles</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+      </nav>
+    </div>    
+    </section>
+  </header>
+<main> 
+    <!-- Producto en especifico -->
+<section class="pdt-principal">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-2 col-md-4 producto-img">
+              <div class="pdt-img-1">
+                  <img src="../img/Group 72.png" alt=""  id="img-1.1">
+                  <img src="../img/Group 73.png" alt="" id="img-2.2">
+                  <img src="../img/Group 74.png" alt="" id="img-3.3">
+                  <img src="../img/Group 75.png" alt="" id="img-4.4">
+              </div>
+          </div>
+          <div class="col-lg-5 col-md-8  pdt-img-2" id="zoom-container">
+            <div class="preview-box"></div>
+            <img src="../img/Group 70 (1).png" alt="" id="imgchange" >
+          </div>
+          <div class="col-lg-5 col-md-12   producto-detalles">
+            <div class="contenido-proucto">
+              <h2>Gafas Oftálmicas -D6002</h2>
+              <p>$215.900 COP</p>
+              <div class="star-detalles">
+                <i class="bi bi-star-fill starw "></i>
+                <i class="bi bi-star-fill starw"></i>
+                <i class="bi bi-star-fill starw"></i>
+                <i class="bi bi-star-fill starw"></i>
+                <i class="bi bi-star-fill starw"></i>  
+              </div>
+              <p>Color - Dorado</p>
+              <button class="btn-pedido">
+                <a href="">Hacer pedido</a>
+              </button>
+            </div>
+          </div>
+      </div>
+    </div>
+</section>
+<!-- Caracteristicas de las gafas -->
+<section class="caracteristicas-pdt">
+    <div class="container">
+        <style>
+            /* Personalizar el ancho de las columnas */
+            .custom-col {
+              width: 33.33%;
+            }
+            @media (max-width: 767.98px) {
+              .custom-col {
+                width: 50%;
+              }
+            }
+          </style>
+        <div class="row">
+            <h2>Caracteristicas del producto</h2>
+          <div class="col-md-4 col-sm-6 custom-col column-1">
+            <!-- Contenido de la primera columna -->
+            <p>Forma: Rectangular</p>
+            <p>Material: Pasta</p>
+            <p>Color: Negro / Dorado</p>
+            <p>Marca: Gucci</p>
+          </div>
+          <div class="col-md-4 col-sm-6 custom-col column-2">
+            <!-- Contenido de la primera columna -->
+            <p>Genero: Hombre</p>
+            <p>Lente montura: 49</p>
+            <p>Brazo montura: 135</p>
+            <p>Puente montura: 16</p>
+          </div>
+          <div class="col-md-4 col-sm-12 custom-col column-3">
+            <!-- Contenido de la tercera columna -->
+            <h4>Incluyen</h4>
+            <p>Estuche</p>
+            <p>Paño de limpieza</p>
+          </div>
+        </div>
+      </div>
+</section>
+<!-- Medidas de las gafas -->
+<section class="medidas-pdt">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 medidas-1">
+                <img src="../img/image 10.png" alt="Imagen" class="img-fluid">
+            </div>
+            <div class="col-lg-6 medidas-2">
+                <img src="../img/image 10 (1).png" alt="Imagen" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="PLT-devolucion">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 PLT-detalles">
+        <h2>Politicas de devolucioness</h2>
+        <p>No hay devoluciones, oyo pirobo</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Pie de la Paguina -->
+<footer>
+  <section id="footer-final">
+    <div class="footer-pagos">
+      <h3>Metodos De <br>Pago</h3>
+      <img src="../img/efectivo1.png" alt="">
+      <img src="../img/tarjeta-de-credito1.png" alt="">
+      <img src="../img/daviplata1.png" alt="">
+      <img src="../img/Nequi1.png" alt="">
+    </div>
+    <div class="footer-redes">
+      <h3>Redes <br>Sociales</h3>
+      <a href=""><img src="../img/facebook1.png" alt=""></a>
+      <a href=""><img src="../img/instagram1.png" alt=""></a>
+      <a href=""><img src="../img/whatsapp1..png" alt=""></a>
+    </div>
+    <div class="footer-mapa">
+      <h3>Tienda <br>Fisica</h3>
+      <a href="https://maps.app.goo.gl/1m4nn91wigKfTF5e8 " target="_blank">
+        <img src="../img/mapa-tienda.png" alt="">
+      </a>
+    </div>
+  </section>
+</footer>
+
+<!-- Bootstrap JS y dependencias opcionales (jQuery) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- JvaScrip -->
+  <script src="../js/details.js"></script>   
+</body>
+</html>

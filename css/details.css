@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important; 
+}
+@media screen and (min-width:1920px) and (max-width:2512px){
+    .pdt-principal
+    .row {
+        --bs-gutter-x: 24rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x));
+    }
+}
+.pdt-principal{
+    margin-top: 60px;
+    width: 100%;
+    height: 70vh;
+}
+.producto-detalles{
+    text-align: center;
+    position: relative;
+}
+.producto-detalles p{
+    font-size: 28px;
+}
+.pdt-img-1{
+    width: 200px;
+    height: 100%;
+    cursor: pointer;
+}
+.pdt-img-1 img{
+    width: 80%;
+    margin-top: 20px;  
+    transition: transform 0.3s ease; 
+}
+.pdt-img-1 img:hover {
+    transform: scale(1.1) rotate(0deg); /* Al hacer hover sobre la imagen, la escala aumentará al 110% y se rotará 10 grados a la derecha */
+}
+.pdt-img-1 img:hover:hover:hover {
+    transform: scale(1.2) rotate(0deg); /* Al hacer hover sobre la imagen, la escala aumentará al 110% y se rotará 10 grados a la izquierda */    
+}
+
+.pdt-img-2 {
+    /* border: 2px solid rgb(124, 124, 124); */
+    /* width: 615px; 
+    height: 640px; */
+    overflow: hidden; 
+    position: relative;
+}
+.pdt-img-2 img {
+    position: absolute; 
+    width: 100%; 
+    height: auto; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+}
+.pdt-img-2 .preview-box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    pointer-events: none;
+}
+
+#zoom-container.zoomed img {
+    transform-origin: var(--x) var(--y);
+    transform: scale(1.9);
+  }
+.contenido-proucto{
+    position: relative;
+    top: 108px;
+    right: 192px;
+    width: 500px;
+}
+.btn-pedido{
+    width: 110px;
+    height: 40px;
+    background: linear-gradient(to bottom,rgb(88, 100, 215), rgba(119, 188, 251, 1));
+    border-radius: 20px;
+    border: 5px solid rgba(255, 0, 0, 0);
+}
+.btn-pedido a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.caracteristicas-pdt{
+    width: 100%;
+    height: 280px;
+}
+.caracteristicas-pdt h2{
+    transition: transform 0.3s ease;
+}
+.caracteristicas-pdt h2:hover {
+    transform: rotate(10deg); /* Al hacer hover sobre el título, rotará 10 grados a la derecha */
+}
+
+.caracteristicas-pdt h2:hover:hover:hover {
+    transform: rotate(1deg); /* Al hacer hover sobre el título, rotará 10 grados a la izquierda */
+}
+.column-1,.column-2,.column-3{
+    margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 20px;
+}
+.medidas-pdt{
+    height: 330px;
+}
+.medidas-1,.medidas-2{
+    width: 50%;
+    height: 330px;
+}
+.medidas-1 img{
+    transition: transform 0.3s ease;
+}
+.medidas-2 img{
+    transition: transform 0.3s ease;
+}
+.medidas-1 img:hover {
+    transform: scale(1.1) rotate(0deg); /* Al hacer hover sobre la imagen, la escala aumentará al 110% y se rotará 10 grados a la derecha */
+}
+.medidas-1 img:hover:hover:hover {
+    transform: scale(1.1) rotate(0deg); /* Al hacer hover sobre la imagen, la escala aumentará al 110% y se rotará 10 grados a la izquierda */
+}
+.medidas-2 img:hover {
+    transform: scale(1.1) rotate(0deg); /* Al hacer hover sobre la imagen, la escala aumentará al 110% y se rotará 10 grados a la derecha */
+}
+.medidas-2 img:hover:hover:hover {
+    transform: scale(1.1) rotate(0deg); /* Al hacer hover sobre la imagen, la escala aumentará al 110% y se rotará 10 grados a la izquierda */
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.star-detalles{
+    width: 50%;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.starw{
+    font-size: 20px;
+    color: #bbb;
+    transition: color 0.4;
+    cursor: pointer;
+    margin-right: 3px;
+}
+.starw:hover, .starw.checked {
+    color: gold;
+}
+/* Apartado de las devoluciones */
+.PLT-devolucion{
+    width: 100%;
+    margin-top: 50px;
+}
+.PLT-detalles h2{
+    transition: transform 0.3s ease;
+}
+.PLT-detalles h2:hover {
+    transform: rotate(10deg); /* Al hacer hover sobre el título, rotará 10 grados a la derecha */
+}
+.PLT-detalles h2:hover:hover:hover {
+    transform: rotate(1deg); /* Al hacer hover sobre el título, rotará 10 grados a la izquierda */
+}
+.PLT-detalles p{
+    font-size: 20px;
+}
+@media (min-width: 992px){
+.producto-detalles{
+    flex: 0 0 auto;
+    width: 32%;
+}
+}
+
+
+/* tabled*/
+@media screen and (min-width:768px) and (max-width:990px){
+    .medidas-1,.medidas-2{
+        width: 100%;
+        height: 352px;
+    }
+    .producto-detalles{
+        width: 90%;
+        margin: 0 auto;
+        height: 270px;
+    } 
+    .contenido-proucto {
+        position: relative;
+        margin: 0 auto;
+        top: 20px;
+        right: 0px;
+    }
+    .caracteristicas-pdt{
+        width: 100%;
+        height: 380px;
+        position: relative;
+        top: 125px;
+    }
+    .medidas-pdt{
+        height: 685px;
+    }
+}
+
+/* SOLO MODIFICA TABLET PRO */
+@media screen and (min-width:1024px) and (max-width:1336px){
+    .contenido-proucto {
+    top: 108px;
+    right: -16px;
+    width: 330px;
+    }
+    .pdt-principal {
+        height: 45vh;
+    }
+    .pdt-img-1 {
+        position: relative;
+        right: 24px;
+    }
+}
+
+/* Ajustes de risponsil */
+/* SMARTPHONE _ */
+@media screen and (min-width:320px) and (max-width:600px){
+    .medidas-1,.medidas-2{
+        width: 100%;
+        height: 196px;
+    }
+    .pdt-img-2 img {
+        position: absolute;
+    }
+    .pdt-img-2 {
+        height: 291px;
+        margin-top: 20px;
+    }
+    .pdt-img-1 {
+        width: 366px;
+        margin: 0 auto;
+    }
+    .pdt-img-1 img {
+        width: 49%;
+        margin-top: 10px;
+    }
+    .contenido-proucto {
+        position: relative;
+        top: 0px; 
+        right: 0px;
+        width: 100% !important;
+        height: 250px;
+    }
+    .caracteristicas-pdt {
+        width: 100%;
+        height: 355px;
+        margin-top: 258px;
+    }
+    .PLT-detalles p {
+        font-size: 17px;
+        margin: 0px 18px 0px 20px;
+    }
+    .PLT-detalles h2 {
+        margin-left: 10px;
+    }
+
+    
+}

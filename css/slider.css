@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+
+.boton{
+    background-color: #7086ce;
+    border: 0;
+    border-radius: 10px;
+    color: black;
+    font-size: 14px;
+    padding: 10px 25px ;
+    margin-top: 50px;
+    margin-left: 180px;
+    font-weight: 600;
+
+}
+
+.img-fil{
+    margin-left: 10px;
+    align-items: center;
+}
+
+
+.mod-bo {
+    background-color: #7086ce;
+    margin-left: 230px;
+    margin-right: 230px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+
+/* Todo lo del slider */
+
+
+.slider {
+    width: 78vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.slider .slider-track {
+    display: flex;
+    animation: scroll 40s linear infinite forwards;
+    -webkit-animation: scroll 40s linear infinite forwards;  
+    width: calc(300px * 10);
+}
+
+.slider .slide {
+    width: 300px;
+}
+
+.slider .slide img {
+    width: 70%;
+}
+
+.slide{
+    margin-left: 25px;
+    top: 500px;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-300px * 5));
+        transform: translateX(calc(-300px * 5));
+    }
+}
+
+/* Todo lo del slider */
+
+
+/* Tarjetas */  
+.logo-gran {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+
+.card-body {
+    text-align: center;
+    align-items: center;
+}
+
+.card-body .btn{
+    background: #7086ce;
+    color: #000;
+    font-weight: 500;
+    border-color: #7086ce;
+}
+
+.card-img-top{
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1) rotate(0deg); /* Al hacer hover sobre la imagen, la escala aumentará al 110% y se rotará 10 grados a la derecha */
+}
+
+.card-img-top:hover:hover:hover {
+    transform: scale(1.1) rotate(0deg); /* Al hacer hover sobre la imagen, la escala aumentará al 110% y se rotará 10 grados a la izquierda */    
+}
+/* Tarjetas */
+
+
+
+/* Boton flotante fijo */
+
+#btn-detalles{
+    display: none;
+}
+
+.contain{
+    position: fixed;
+    bottom: 120px;
+    right: 30px;
+}
+
+.informacion a{
+    display: block;
+    background: #7086ce;
+}
+
+
+
+/* Responsive */
+/* Ipad mini */
+@media screen and (min-width:768px) and (max-width:990px){
+    
+    .boton{
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+
+    .card-bod{
+        margin: 0px 80px 50px 80px;
+        padding: 20px;
+    }
+    
+    .card{
+        margin-bottom: 50px;
+        margin-left: 25px;
+    }
+}
+
+/* Tablet pro */
+@media screen and (min-width:1020px) and (max-width:1336px){
+    .boton{
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+
+    .card-bod{
+        margin: 0px 80px 50px 80px;
+        padding: 20px;
+    }
+    .card{
+        margin-bottom: 50px;
+        margin-right: 1000px;
+        width: 22rem !important;
+        margin-left: 26px;
+    }
+    .col-lg-3{
+        flex: 0 0 auto;
+        width: 40%;
+    }
+
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x));
+        justify-content: space-evenly;
+    }
+}
+
+/* Mobil */
+@media screen and (min-width:320px) and (max-width:600px){
+    
+    .boton{
+        margin-top: 30px;
+        margin-left: 20px;
+        font-size: 10px;
+    }
+
+    .img-fil{
+        max-width: 25px;
+    }
+
+    .card-bod{
+        margin: 0px 50px 20px 50px;
+        padding: 20px;
+    }
+
+    .slider{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .logo-gran{
+        max-width: 250px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .card{
+        margin-bottom: 50px;
+        margin-left: 60px;
+    }
+}
