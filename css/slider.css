@@ -29,6 +29,10 @@
     padding: 15px;
 }
 
+.card{
+    margin-bottom: 50px;
+    
+}
 
 /* Todo lo del slider */
 
@@ -100,6 +104,7 @@
 
 .card-img-top{
     transition: transform 0.3s ease;
+    padding: 20px;
 }
 
 .card-img-top:hover {
