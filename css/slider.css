@@ -15,6 +15,11 @@
 
 }
 
+.btn.btn-primary:hover {
+    color: #fff;
+    transform: scale(1.15);
+}
+
 .img-fil{
     margin-left: 10px;
     align-items: center;
